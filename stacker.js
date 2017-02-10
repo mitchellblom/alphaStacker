@@ -4,16 +4,28 @@ var letterStack = "";
 
 // // // The stackLetter function should accept the array as the sole argument
 function stackLetters () {
-  for (var i = 0; i < alphabet.length; i++) {
+  for (i = 0; i < alphabet.length; i++) {
   	letterStack += alphabet[i];
   	console.log(letterStack);
-  }
-}  
+  } 
+ }
 
 // // // Invoke the function and pass in the array
-stackLetters(alphabet);
 
 
 // If the current value of the counter variable can be evenly divided by 3 - 
 // using the JavaScript remainder operator - then add a single space to the output.
 
+function stackSpace() {
+	letterStack = "";
+  for (i = 0; i < alphabet.length; i++) {
+  	if (i % 3 === 0) { 
+    letterStack += " ";
+}
+	letterStack += alphabet[i]
+  	console.log(letterStack);
+  } 
+ }
+
+stackLetters(alphabet);
+stackSpace(alphabet);
